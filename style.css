@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("Images/weather-bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(146, 186, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 1.5cm;
+  display: flex;
+  width: 100%;
+  box-shadow: 1px 1px 5px rgb(209, 209, 245);
+}
+
+.title {
+  width: 30%;
+  text-align: center;
+}
+
+#searchMain {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchbar {
+  width: 50%;
+  height: 40px;
+  border-radius: 50px 0 0 50px;
+  border: none;
+  padding: 15px;
+}
+
+#searchbtn {
+  height: 40px;
+  width: 40px;
+  border-radius: 0 50px 50px 0;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(83, 152, 255);
+}
+
+#mainWeather {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  flex-wrap: wrap;
+}
+
+#cityDetails {
+  height: 11cm;
+  width: max(8cm, 30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#city {
+  width: max(7cm, 90%);
+  height: 1.5cm;
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-top: 0.2cm;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.219);
+  padding: 5px;
+}
+
+#weather {
+  width: max(7cm, 90%);
+  height: 90%;
+  margin: 10px 0;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-top: 0.2cm;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.219);
+  padding: 5px;
+}
+
+#temp {
+  font-size: 36px;
+}
+
+#feels {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#type {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#otherForecast {
+  height: 11cm;
+  width: max(8cm, 50%);
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forecast {
+  width: 33%;
+  height: auto;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.219);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 1px white;
+  text-align: center;
+}
+
+.forecast img {
+  height: 45%;
+  width: 45%;
+}
+
+.forecast div {
+  font-weight:475;
+}
+
+@media (max-width: 600px) {
+  #otherForecast {
+    width: max(9cm, 90%);
+    height: 8.5cm;
+  }
+  .forecast {
+    width: 33.33%;
+  }
+}

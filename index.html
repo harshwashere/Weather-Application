@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Webite</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="title"><h3>My Weather</h3></div>
+      <div id="searchMain">
+        <input
+          type="text"
+          name="search"
+          id="searchbar"
+          placeholder="Enter city name"
+        />
+        <button id="searchbtn" type="submit" onclick="searchBtn()"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+
+    <div id="mainWeather">
+      <div id="cityDetails">
+        <div id="city"></div>
+        <div id="weather">
+          <div id="temp"></div>
+          <div id="feels"></div>
+          <img id="image" src="" alt="" srcset="" style="height: 140px;">
+          <div id="type"></div>
+        </div>
+      </div>
+      <div id="otherForecast">
+        <div id="humidity" class="forecast">
+          <img src="icons/humidity.png" alt="Humidity Icon">
+          <div id="humid"></div>
+          <h4>Humidty</h4>
+        </div>
+        <div id="wind" class="forecast">
+            <img src="icons/wind.png" alt="Wind Icon">
+            <div id="windUnit"></div>
+          <h4>Wind</h4>
+        </div>
+        <div id="pressure" class="forecast">
+            <img src="icons/pressure.png" alt="Pressure Icon">
+            <div id="pressureUnit"></div>
+          <h4>Pressure</h4>
+        </div>
+        <div id="country" class="forecast">
+            <img src="icons/country.png" alt="Country Icon">
+            <div id="count"></div>
+          <h4>Country</h4>
+        </div>
+        <div id="min_temp"  class="forecast">
+            <img src="icons/min_temp.png" alt="Min Temp Icon">
+            <div id="min"></div>
+            <h4>Min Temperature</h4>
+            </div>
+        <div id="max_temp" class="forecast">
+            <img src="icons/max_temp.png" alt="Max Temp Icon">
+            <div id="max"></div>
+          <h4>Max Temperature</h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
